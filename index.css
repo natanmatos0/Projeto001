@@ -1,0 +1,113 @@
+body {
+    background-color: antiquewhite;
+}
+
+section {
+    background: rgba(190, 190, 168, 0.745);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+}
+
+#titulo {
+    text-align: center;
+}
+
+#saudacao {
+    text-align: center;
+}
+
+#botCadastro { 
+    background-color: None;
+    text-align: center;
+    font: normal 15pt arial;
+
+}
+
+#but {
+    background-color: rgb(255, 54, 64);
+    display: block;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+    width: 220px;
+    height: 25px;
+    font-size: medium;
+}
+
+#procura {
+    background-color: yellow;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+    width: 220px;
+    height: 25px;
+    font-size: medium;
+
+}
+
+#Login {
+    background-color: green;
+    display: block;
+    margin: 10px auto;
+    padding: 30 px 60 px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+    width: 220px;
+    height: 25px;
+    font-size: medium;
+
+}
+
+#CadastroUsuario {
+    display: block;
+    background-color: skyblue;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+    width: 220px;
+    height: 25px;
+    font-size: medium;
+
+}
+
+
+#sair{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: 10px auto;
+    padding: 30 px 60 px;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.079);
+    width: 220px;
+    height: 25px;
+    font-size: medium;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-input {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#loginArea {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#loginMessage {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#navegacao {
+    display: flex;
+    flex-direction: column;
+}
