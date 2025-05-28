@@ -23,7 +23,8 @@ section {
     background-color: None;
     text-align: center;
     font: normal 15pt arial;
-
+    padding: 10px;
+    margin: 10px auto;
 }
 
 #but {
@@ -110,4 +111,10 @@ section {
 #navegacao {
     display: flex;
     flex-direction: column;
+    background-color: aqua;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
