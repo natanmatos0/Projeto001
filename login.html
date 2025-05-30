@@ -86,12 +86,23 @@
             
             <p>E-mail:</p> <input type="text" placeholder="exemplo@gmail.com" id="email">
             <p>Senha:</p> <input type="password" placeholder="123@nN45" id="senha">
-
-
-
+            <button onclick="logar()">Entrar</button>
         </div>
 
     </section>
+    <script>
+        const ce = "exemplo@gmail.com";
+        const cs = "123@nN45";
+        function logar() {
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("senha").value.trim();
+            if (email == ce && senha == cs){
+                window.alert("Login efetuado com sucesso")
+            } else {
+                window.alert("E-mail ou senha incorretos")
+            }
+        }
+    </script>
 </body>
 
 </html>
