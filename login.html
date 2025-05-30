@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
+        body {
             background-color: 192, 192, 192;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        nav{
-            text-align: left;
-            margin-left: 10px;
+        nav {
+            display: flex;
+            flex-direction: column;
             background-color: antiquewhite;
-            
+            border-radius: 10px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.10);
         }
-        section{
+
+        section {
             background: rgba(190, 190, 168, 0.745);
             border-radius: 10px;
             padding: 15px;
@@ -25,19 +32,49 @@
             margin: auto;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
         }
+
+        p {
+            font-size: 20px;
+            text-align: left;
+            margin: 0px;
+            white-space: nowrap;
+        }
+
         .container {
             display: flex;
-            align-items: center; /* Alinha verticalmente */
-            gap: 10px; /* Espaço entre os elementos */
-}
-        #email {
-
+            align-items: center;
+            gap: 15px;
+            margin: 20px;
         }
-        #senha{
 
+        #email {
+            width: 80%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #senha {
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #logDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
         }
     </style>
 </head>
+
 <body>
     <nav>
         <a href="index.html">Voltar para area inicial</a>
@@ -46,8 +83,9 @@
 
     <section>
         <div id="logDiv" class="container">
-            E-mail: <input type="text" placeholder="exemplo@gmail.com" id="email">
-            Senha: <input type="password" placeholder="123@nN45" id="senha">
+            
+            <p>E-mail:</p> <input type="text" placeholder="exemplo@gmail.com" id="email">
+            <p>Senha:</p> <input type="password" placeholder="123@nN45" id="senha">
 
 
 
@@ -55,4 +93,5 @@
 
     </section>
 </body>
+
 </html>
