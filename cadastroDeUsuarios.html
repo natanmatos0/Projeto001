@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.10);
         }
 
-        section{
+        section {
             background: rgba(190, 190, 168, 0.745);
             border-radius: 10px;
             padding: 15px;
@@ -37,9 +38,18 @@
             align-items: center;
             justify-content: center;
             height: 250px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+        }
+
+        .container p {
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <nav>
         <a href="index.html">Voltar para area inicial</a>
@@ -47,13 +57,19 @@
     <section>
 
         <div class="container">
-            Informe seu nome completo: <input type="text" name="nomeCompleto" id="nomeCompleto">
+            <P>Informe seu nome completo:</P> <input type="text" name="nomeCompleto" id="nomeCompleto">
+            <p>informe seu numero de celular:</p> <input type="text" name="celular" id="celular"
+                placeholder="(xx) x xxxx-xxxx">
+            <p>Informe seu e-mail:</p> <input type="email" name="emailUsuario" id="emailUsuario"
+                placeholder="exemplo@gmail.com">
+            <p>informe sua senha:</p> <input type="password" name="senhaUsuario" id="senhaUsuario"
+                placeholder="123@nN45">
+            <button onclick="cadastrarUsuario()">Cadastrar</button>
+
         </div>
 
     </section>
-    
-    <script>
-
-    </script>
+    <script src="index.js"></script>
 </body>
+
 </html>
