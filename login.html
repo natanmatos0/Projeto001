@@ -45,6 +45,11 @@
             align-items: center;
             gap: 15px;
             margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
         }
 
         #email {
@@ -65,13 +70,6 @@
             margin-bottom: 5px;
         }
 
-        #logDiv {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 250px;
-        }
     </style>
 </head>
 
@@ -84,7 +82,7 @@
     <section>
         <div id="logDiv" class="container">
             
-            <p>E-mail:</p> <input type="text" placeholder="exemplo@gmail.com" id="email">
+            <p>E-mail:</p> <input type="email" placeholder="exemplo@gmail.com" id="email">
             <p>Senha:</p> <input type="password" placeholder="123@nN45" id="senha">
             <button onclick="logar()">Entrar</button>
         </div>
@@ -96,9 +94,13 @@
         function logar() {
             const email = document.getElementById("email").value.trim();
             const senha = document.getElementById("senha").value.trim();
-            if (email == ce && senha == cs){
+            if (email == "" || senha == ""){
+                window.alert("Preencha ambos os campos")
+            }
+            else if (email == ce && senha == cs){
                 window.alert("Login efetuado com sucesso")
-            } else {
+            }
+            else {
                 window.alert("E-mail ou senha incorretos")
             }
         }
