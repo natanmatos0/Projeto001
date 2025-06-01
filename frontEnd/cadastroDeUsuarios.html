@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastroUsuarios</title>
+    <style>
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.10);
+        }
+
+        section {
+            background: rgba(190, 190, 168, 0.745);
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+        }
+
+        .container p {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Voltar para area inicial</a>
+    </nav>
+    <section>
+        <form id="formCadastro">
+            <div class="container">
+                <p>Informe seu nome completo:</p>
+                <input type="text" id="nomeCompleto" required>
+
+                <p>Informe seu número de celular:</p>
+                <input type="tel" id="celular" placeholder="(xx) x xxxx-xxxx" required>
+
+                <p>Informe seu e-mail:</p>
+                <input type="email" id="emailUsuario" placeholder="exemplo@gmail.com" required>
+
+                <p>Informe sua senha:</p>
+                <input type="password" id="senhaUsuario" placeholder="123@nN45" required>
+
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+    <script src="auth.js"></script>
+</body>
+
+</html>
