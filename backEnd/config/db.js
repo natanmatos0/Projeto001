@@ -1,3 +1,4 @@
+// config/db.js
 import pg from 'pg';
 const { Pool } = pg;
 
@@ -5,18 +6,18 @@ const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
   host: process.env.DB_HOST || 'localhost',
   database: process.env.DB_NAME || 'estacionei',
-  password: process.env.DB_PASSWORD || 'postgres',
+  password: process.env.DB_PASSWORD || '', // String vazia se não houver senha
   port: process.env.DB_PORT || 5432,
 });
 
-// Testa a conexão imediatamente
+// Teste de conexão
 pool.on('connect', () => {
-  console.log('📦 Conectado ao PostgreSQL');
+  console.log('🟢 Conectado ao PostgreSQL');
 });
 
 pool.on('error', (err) => {
-  console.error('💥 Erro inesperado no cliente PostgreSQL:', err);
-  process.exit(-1);
+  console.error('🔴 Erro no PostgreSQL:', err);
 });
 
-export { pool };
+// Exportação explícita
+export { pool };  // Esta linha é crucial
