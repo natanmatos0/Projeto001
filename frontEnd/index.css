@@ -34,6 +34,7 @@ section nav {
 }
 
 #navegacao {
+
     display: flex;               
     flex-direction: line;      
     justify-content: space-around;     
@@ -42,3 +43,14 @@ section nav {
     height: auto;               
     background-color: rgba(0, 255, 255, 0); 
 }
+
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
